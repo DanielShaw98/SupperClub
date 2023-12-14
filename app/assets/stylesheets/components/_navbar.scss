@@ -3,6 +3,9 @@
   background: white;
   height: 90px;
   width: 100%;
+  .container-fluid {
+    padding: 0 50px;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -24,11 +27,9 @@
   text-align: center;
   margin-right: 20px;
 }
+
 .avatar-default {
   margin-top: 8px;
-}
-.container-fluid {
-  padding: 0 50px;
 }
 
 .login-link {
