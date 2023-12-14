@@ -1,5 +1,4 @@
 // Specific CSS for your home-page
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,300;0,500;1,100;1,200&display=swap');
 
 .home-image {
   width: 745.11px;
@@ -37,12 +36,10 @@
   top: 70%;
   left: 6.5%;
   position: absolute;
-
   &:hover {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.00) 93.85%, rgba(255, 255, 255, 0.50) 6.26%);
   }
 }
-
 
 .intro {
   font-size: 28px;
