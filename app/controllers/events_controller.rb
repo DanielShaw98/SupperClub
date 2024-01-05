@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :index, :show]
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: %i[home index show]
+  before_action :set_event, only: %i[show edit update destroy]
 
   def home
   end
@@ -11,7 +11,7 @@ class EventsController < ApplicationController
       {
         lat: event.latitude,
         lng: event.longitude,
-        info_window_html: render_to_string(partial: "info_window", locals: {event: event}),
+        info_window_html: render_to_string(partial: "info_window", locals: { event: event }),
         marker_html: render_to_string(partial: "marker")
       }
     end

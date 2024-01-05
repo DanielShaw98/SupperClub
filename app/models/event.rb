@@ -1,10 +1,9 @@
 class Event < ApplicationRecord
-  
   include PgSearch::Model
   pg_search_scope :global_search,
-    against: [ :venue, :menu, :cuisine, :description ],
+    against: %i[venue menu cuisine description ],
     associated_against: {
-      user: [ :first_name, :last_name ]
+      user: %i[first_name last_name]
     },
     using: {
       tsearch: { prefix: true }

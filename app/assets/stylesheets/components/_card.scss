@@ -20,3 +20,47 @@
     text-decoration: none;
   }
 }
+
+.cards {
+  justify-content: center;
+}
+
+.card-image {
+  width: 300px;
+  height: 180px;
+  border-radius: 20px;
+}
+
+.chef {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.chef, .venue, .cuisine, .date {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.price {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.chef, .venue, .cuisine {
+  margin-bottom: 8px !important;
+}
+
+.venue, .cuisine, .date, .price {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+}

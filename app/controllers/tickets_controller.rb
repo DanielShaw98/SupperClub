@@ -1,5 +1,4 @@
 class TicketsController < ApplicationController
-
   def create
     @event = Event.find(params[:event_id])
     @ticket = Ticket.new(ticket_params)

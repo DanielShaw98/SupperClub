@@ -1,25 +1,23 @@
-
 <div class="container-show">
+  <div class="row">
+    <div class ="bg-white p-3", style = "border-radius:10px; box-shadow: 3px 3px 8px 1px #ccd0d2;">
 
-<div class="row">
-  <div class ="bg-white p-3", style = "border-radius:10px; box-shadow: 3px 3px 8px 1px #ccd0d2;">
-
-<%= simple_form_for(@event) do |f| %>
-  <%= f.input :venue,
-  wrapper_html: { data: {controller: "address-autocomplete", address_autocomplete_key_value: ENV["MAPBOX_API_KEY"]} },
-  input_html: { data: {address_autocomplete_target: "venue"}, class: "d-none" }
-  %>
-  <%= f.input :menu, placeholder: "List your courses here" %>
-  <%= f.input :cuisine %>
-  <%= f.input :price %>
-  <%= f.input :description %>
-  <%= f.input :capacity, as: :integer %>
-  <%= f.input :date,
-              as: :string,
-              input_html: { data: { controller: "datepicker" } } %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.submit class: "create-event-btn"%>
-<% end %>
-</div>
-</div>
+    <%= simple_form_for(@event) do |f| %>
+      <%= f.input :venue,
+      wrapper_html: { data: {controller: "address-autocomplete", address_autocomplete_key_value: ENV["MAPBOX_API_KEY"]} },
+      input_html: { data: {address_autocomplete_target: "venue"}, class: "d-none" }
+      %>
+      <%= f.input :menu, placeholder: "List your courses here" %>
+      <%= f.input :cuisine %>
+      <%= f.input :price %>
+      <%= f.input :description %>
+      <%= f.input :capacity, as: :integer %>
+      <%= f.input :date,
+                  as: :string,
+                  input_html: { data: { controller: "datepicker" } } %>
+      <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      <%= f.submit class: "create-event-btn"%>
+    <% end %>
+    </div>
+  </div>
 </div>
