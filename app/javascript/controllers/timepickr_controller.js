@@ -1,5 +1,6 @@
-import { Controller } from "@hotwired/stimulus"
-import flatpickr from "flatpickr"; //
+import { Controller } from "@hotwired/stimulus";
+import flatpickr from "flatpickr";
+
 // Connects to data-controller="timepickr"
 export default class extends Controller {
   connect() {
@@ -7,6 +8,6 @@ export default class extends Controller {
       enableTime: true,
       noCalendar: true,
       dateFormat: "H:i"
-    })
-  }
-}
+    });
+  };
+};
