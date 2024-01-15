@@ -9,5 +9,5 @@ export default class extends Controller {
       noCalendar: true,
       dateFormat: "H:i"
     });
-  };
-};
+  }
+}
