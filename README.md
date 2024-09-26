@@ -55,7 +55,7 @@ To run this project locally, follow the steps below:
 
 1.  Clone the repository:  
       
-		git clone https://github.com/yourusername/supper-club.git
+		git clone https://github.com/DanielShaw98/supper-club.git
 
 2.  Navigate into the project directory:  
       
